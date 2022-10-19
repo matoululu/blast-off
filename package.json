@@ -1,8 +1,8 @@
 {
-  "name": "dungeon-typer",
+  "name": "blast-off",
   "version": "1.0.0",
-  "description": "Pattern game",
-  "main": "game.js",
+  "description": "A basic template and project for static sites",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "lessc css/less/styles.less css/styles.css",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matoululu/dungeon-typer.git"
+    "url": "git+https://github.com/matoululu/blast-off.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matoululu/dungeon-typer/issues"
+    "url": "https://github.com/matoululu/blast-off/issues"
   },
-  "homepage": "https://github.com/matoululu/dungeon-typer#readme"
+  "homepage": "https://github.com/matoululu/blast-off#readme"
 }
