@@ -1,0 +1,39 @@
+/* Keyboard
+----------------------------------------------- */
+
+key-board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.keyboard-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.key {
+  width: 64px;
+  height: 64px;
+  margin: 0.25rem;
+  display: flex;
+  padding: 0.75rem;
+  background-image: url(../images/ui-key.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  transition: ease-out 0.2s background-color;
+
+  &.pressed {
+    color: #91db69;
+    background-image: url(../images/ui-key-pressed.png);
+    padding-top: 1rem;
+  }
+
+  &.mime {
+    color: #fb6b1d;
+    background-image: url(../images/ui-key-mime.png);
+    padding-top: 1rem;
+  }
+}

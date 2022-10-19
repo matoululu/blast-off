@@ -1,0 +1,21 @@
+{
+  "name": "dungeon-typer",
+  "version": "1.0.0",
+  "description": "Pattern game",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "lessc css/less/styles.less css/styles.css",
+    "watch": "less-watch-compiler css/less css styles.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matoululu/dungeon-typer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matoululu/dungeon-typer/issues"
+  },
+  "homepage": "https://github.com/matoululu/dungeon-typer#readme"
+}

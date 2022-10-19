@@ -1,0 +1,353 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bodyBG: #2e222f;
+  --darkBG: #201e1c;
+  --darkHoverBG: #36312d;
+  --bankBG: #844b40;
+  --fontColor: #fff;
+  --spacing: calc(740px + 2rem);
+}
+@font-face {
+  font-family: "HelvetiPixel";
+  src: url("./fonts/HelvetiPixel.ttf");
+}
+@font-face {
+  font-family: "Adventurer";
+  src: url("./fonts/Adventurer.ttf");
+}
+body {
+  background-color: var(--bodyBG);
+  color: var(--fontColor);
+  padding: 0;
+  font-size: 19px;
+  font-family: 'HelvetiPixel', sans-serif;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 0;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  background: url(../images/ui-button.png) no-repeat;
+  background-size: cover;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 0;
+  color: white;
+  font-family: 'HelvetiPixel', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.6;
+}
+/* Containers
+----------------------------------------------- */
+.container {
+  width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 5rem auto;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+.sidebar {
+  position: relative;
+  height: 500px;
+  border: 1px solid white;
+}
+.main {
+  border: 1px solid white;
+  width: calc(100% - calc(236px + 2rem));
+  height: 500px;
+  margin-left: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.main:after {
+  content: "Spellbook";
+  position: absolute;
+  background-color: var(--bodyBG);
+  top: -12px;
+  left: 5%;
+  width: 20%;
+  border: 1px solid white;
+  z-index: 1;
+  text-align: center;
+}
+.theater {
+  width: 100%;
+  height: 150px;
+  border: 1px solid white;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.theater:after {
+  content: "Dungeon level 1";
+  position: absolute;
+  background-color: var(--bodyBG);
+  top: -12px;
+  left: 5%;
+  width: 20%;
+  border: 1px solid white;
+  z-index: 1;
+  text-align: center;
+}
+/* UI
+----------------------------------------------- */
+.ui-inventory {
+  list-style: none;
+  width: 234px;
+  height: 400px;
+  max-height: 400px;
+  padding: 20px 5px 5px;
+  position: relative;
+}
+.ui-inventory::after {
+  content: "Inventory";
+  position: absolute;
+  background-color: var(--bodyBG);
+  top: -12px;
+  left: 50%;
+  width: 50%;
+  border: 1px solid white;
+  z-index: 1;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.ui-inventory li {
+  display: inline-block;
+  background: url(../images/ui-frame.png) no-repeat;
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  margin: 5px;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.ui-inventory li:hover .ui-details {
+  display: block;
+  width: 250px;
+  height: 150px;
+}
+.ui-inventory li img {
+  width: 100%;
+  height: 100%;
+}
+.ui-details {
+  display: none;
+  background: url(../images/ui-tooltip.png) no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  padding: 1.5rem;
+}
+.ui-details p,
+.ui-details h3 {
+  margin-bottom: 0.5rem;
+}
+/* Healthbar
+----------------------------------------------- */
+.healthbar {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  height: 20px;
+  background: url(../images/ui-pip.png) repeat-x;
+  background-size: 35.667px 20px;
+}
+.healthbar:after {
+  content: "Health";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.healthbar-5 {
+  width: calc(100% - calc(35.667px + 20px));
+}
+.healthbar-4 {
+  width: calc(100% - calc(2 * 35.667px + 20px));
+}
+.healthbar-3 {
+  width: calc(100% - calc(3 * 35.667px + 20px));
+}
+.healthbar-2 {
+  width: calc(100% - calc(4 * 35.667px + 20px));
+}
+.healthbar-1 {
+  width: calc(100% - calc(5 * 35.667px + 20px));
+}
+.healthbar-0 {
+  width: 0;
+}
+/* Popup
+----------------------------------------------- */
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+.popup.is-active {
+  display: block;
+}
+.popup__container {
+  width: 500px;
+  height: 500px;
+  background-color: var(--bodyBG);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  padding: 2rem;
+  text-align: center;
+}
+.popup__container p,
+.popup__container h1,
+.popup__container h2,
+.popup__container h3 {
+  margin-bottom: 0.5rem;
+}
+.next,
+.prev {
+  background: transparent;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.next img {
+  transform: rotate(180deg);
+}
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 3rem;
+}
+.select span {
+  width: 200px;
+}
+/* Fade
+----------------------------------------------- */
+.fade {
+  display: block;
+  background: url(../images/fade.png);
+  background-position: -70px 0;
+  background-repeat: repeat-y;
+  background-size: 1500px;
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 1400px;
+  height: 1050px;
+  z-index: 99;
+  transition: ease-in-out 0.8s right;
+}
+.fade--fade-out {
+  right: -1500px;
+}
+/* Keyboard
+----------------------------------------------- */
+key-board {
+  display: flex;
+  flex-wrap: wrap;
+}
+.keyboard-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.key {
+  width: 64px;
+  height: 64px;
+  margin: 0.25rem;
+  display: flex;
+  padding: 0.75rem;
+  background-image: url(../images/ui-key.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  transition: ease-out 0.2s background-color;
+}
+.key.pressed {
+  color: #91db69;
+  background-image: url(../images/ui-key-pressed.png);
+  padding-top: 1rem;
+}
+.key.mime {
+  color: #fb6b1d;
+  background-image: url(../images/ui-key-mime.png);
+  padding-top: 1rem;
+}
+/* NPC
+----------------------------------------------- */
+.npc {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 68%;
+}
+.npc.npc--big {
+  height: 64px;
+  width: 64px;
+  top: 65%;
+}
+.npc--wizard {
+  background: url(../images/npc-wizard.png) no-repeat;
+  background-size: cover;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.npc--chest {
+  background: url(../images/npc-chest.png) no-repeat;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.npc--door {
+  background: url(../images/npc-door.png) no-repeat;
+  background-size: cover;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+.npc--door-open {
+  background: url(../images/npc-door-open.png) no-repeat;
+  background-size: cover;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}

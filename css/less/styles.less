@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+:root {
+  --bodyBG: #2e222f;
+  --darkBG: #201e1c;
+  --darkHoverBG: #36312d;
+  --bankBG: #844b40;
+
+  --fontColor: #fff;
+  --spacing: calc(740px + 2rem);
+}
+
+
+@font-face {
+  font-family: "HelvetiPixel";
+  src: url("./fonts/HelvetiPixel.ttf");
+}
+
+@font-face {
+  font-family: "Adventurer";
+  src: url("./fonts/Adventurer.ttf");
+}
+
+body {
+  background-color: var(--bodyBG);
+  color: var(--fontColor);
+  padding: 0;
+  font-size: 19px;
+  font-family: 'HelvetiPixel', sans-serif;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  background: url(../images/ui-button.png) no-repeat;
+  background-size: cover;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 0;
+  color: white;
+  font-family: 'HelvetiPixel', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+@import 'containers';
+@import 'ui';
+@import 'healthbar';
+@import 'popup';
+@import 'fade';
+@import 'keyboard';
+@import 'npc';
+

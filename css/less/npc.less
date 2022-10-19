@@ -1,0 +1,45 @@
+/* NPC
+----------------------------------------------- */
+
+.npc {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 68%;
+
+  &.npc--big {
+    height: 64px;
+    width: 64px;
+    top: 65%;
+  }
+}
+
+.npc--wizard {
+  background: url(../images/npc-wizard.png) no-repeat;
+  background-size: cover;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.npc--chest {
+  background: url(../images/npc-chest.png) no-repeat;
+  background-size: cover;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.npc--door {
+  background: url(../images/npc-door.png) no-repeat;
+  background-size: cover;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.npc--door-open {
+  background: url(../images/npc-door-open.png) no-repeat;
+  background-size: cover;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
