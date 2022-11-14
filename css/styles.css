@@ -16,6 +16,7 @@ body {
   color: var(--bodyFontColor);
   background-color: var(--bodyBG);
   font-family: var(--bodyFontFamily);
+  font-size: var(--bodyFontSize);
 }
 /* Elements
 ----------------------------------------------- */
