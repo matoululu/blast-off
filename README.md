@@ -11,7 +11,7 @@ It uses [Parcel](https://parceljs.org/) to bundle your code and [LESS](http://le
 4. Run `npm run build` to build the project for production
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL-3.0 license - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Change log
 ### v2.1.0
