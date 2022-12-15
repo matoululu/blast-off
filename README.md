@@ -13,7 +13,7 @@ It uses [Parcel](https://parceljs.org/) to bundle your code and [LESS](http://le
 ## License
 This project is licensed under the GPL-3.0 license - see the [LICENSE.md](LICENSE.md) file for details
 
-## Change log
+## Latest changes
 ### v2.1.0
 - Fixes build command
 - Simplify and categorize stylesheets
