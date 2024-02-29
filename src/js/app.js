@@ -1,6 +1,5 @@
-import example from './source/example.js';
+import Popup from './source/pop-up';
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM loaded');
-  example();
 });
