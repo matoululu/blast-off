@@ -11,12 +11,4 @@ It uses [Parcel](https://parceljs.org/) to bundle your code and [LESS](http://le
 4. Run `npm run build` to build the project for production
 
 ## License
-This project is licensed under the GPL-3.0 license - see the [LICENSE](LICENSE) file for details
-
-## Latest changes
-### v2.1.0
-- Fixes build command
-- Simplify and categorize stylesheets
-- Adds some example JavaScript
-- Changed file structure
-- Improved README.md
+This project is licensed under the MPL-2.0 license - see the [LICENSE](LICENSE) file for details
