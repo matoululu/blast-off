@@ -1,3 +1,9 @@
+*:focus {
+  outline: 0;
+  background-color: yellow !important;
+  color: #000 !important;
+}
+
 body {
   color: var(--bodyFontColor);
   background-color: var(--bodyBG);
@@ -17,6 +23,36 @@ main {
   @media @small {
     padding: 1.5rem 1rem;
   };
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    padding-left: 1rem;
+  }
+}
+
+footer {
+  font-size: 0.65rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 0 1rem;
 }
 
 a,

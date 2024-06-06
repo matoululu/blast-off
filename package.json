@@ -1,6 +1,6 @@
 {
   "name": "blast-off",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "A basic template and project for static sites",
   "source": "src/index.html",
   "parcel-namer-rewrite": {
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/matoululu/blast-off.git"
   },
   "author": "",
-  "license": "MPL-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/matoululu/blast-off/issues"
   },
