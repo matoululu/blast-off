@@ -15,17 +15,39 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Example 1</a></li>
-        <li><a href="#">Example 2</a></li>
-        <li><a href="#">Example 3</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#js">JavaScript</a></li>
+        <li><a href="#commands">Commands</a></li>
       </ul>
     </nav>
   </header>
   <main role="main">
-    <h2>Welcome</h2>
+    <h2 id="intro">Introduction</h2>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et modi quo debitis cumque saepe impedit, animi eveniet autem aliquid vel voluptates iusto rem at beatae possimus eum, architecto, adipisci incidunt?
+      Blast-off is a simple project template that includes a basic HTML structure, a CSS reset, a grid system, and some build tools to help you get started with your project. A lot of effort is put into keeping code simple, it's encouraged to dive into the files and inspect the code in order to learn how this all works.
     </p>
+    <hr/>
+    <h2 id="grid">Grid system</h2>
+    <p>Blast-off comes packaged with a simple grid system, inspect the HTML to learn about how this is set up.</p>
+    <div class="grid">
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--50-small"></div>
+      <div class="grid-item grid-item--100 grid-item--50-small"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--50"></div>
+      <div class="grid-item grid-item--50"></div>
+      <div class="grid-item grid-item--33"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--25"></div>
+      <div class="grid-item"></div>
+    </div>
+    <hr/>
+    <h2 id="js">JavaScript</h2>
+    <p>Included in this project are some handy JavaScript files, including a custom-element popup, event dispatching and localStorage helpers.</p>
+    <hr/>
+    <h2 id="commands">Commands</h2>
+    <p>Blast-off uses parcel.js to package everything into a lovely little website. Please refer to the package.json file to check out the available commands.</p>
   </main>
   <footer role="contentinfo">
     Built with 💖 by <a href="https://matou.io">matou.io</a> - content loaded in <span id="loaded-speed"></span>
