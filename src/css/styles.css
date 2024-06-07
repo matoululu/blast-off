@@ -1,7 +1,7 @@
 @import 'source/reset';
 @import 'source/variables';
-@import 'source/media-queries';
 @import 'source/basics';
+@import 'source/helpers';
 @import 'source/grid';
 @import 'source/popup';
 

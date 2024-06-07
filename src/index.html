@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blast-off | Project template</title>
-  <link rel="stylesheet" href="css/styles.less">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
 <body>
@@ -30,16 +30,19 @@
     <hr/>
     <h2 id="grid">Grid system</h2>
     <p>Blast-off comes packaged with a simple grid system, inspect the HTML to learn about how this is set up.</p>
-    <div class="grid">
+    <div class="grid grid--3-per-row">
       <div class="grid-item"></div>
-      <div class="grid-item grid-item--50-small"></div>
-      <div class="grid-item grid-item--100 grid-item--50-small"></div>
       <div class="grid-item"></div>
-      <div class="grid-item grid-item--50"></div>
-      <div class="grid-item grid-item--50"></div>
-      <div class="grid-item grid-item--33"></div>
       <div class="grid-item"></div>
-      <div class="grid-item grid-item--25"></div>
+    </div>
+    <div class="grid grid--2-per-row pt-m">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+    <div class="grid grid--4-per-row pt-m">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
       <div class="grid-item"></div>
     </div>
     <hr/>
@@ -49,7 +52,7 @@
     <h2 id="commands">Commands</h2>
     <p>Blast-off uses parcel.js to package everything into a lovely little website. Please refer to the package.json file to check out the available commands.</p>
   </main>
-  <footer role="contentinfo">
+  <footer class="fs-s" role="contentinfo">
     Built with 💖 by <a href="https://matou.io">matou.io</a> - content loaded in <span id="loaded-speed"></span>
   </footer>
   <pop-up>

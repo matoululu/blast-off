@@ -18,11 +18,11 @@ header,
 main {
   margin: 0 auto;
   max-width: var(--siteWidth);
-  padding: 3rem 1rem;
+  padding: var(--spacing-xl) var(--spacing-m);
 
-  @media @small {
-    padding: 1.5rem 1rem;
-  };
+  @media only screen and (max-width: 768px) {
+    padding: var(--spacing-l) var(--spacing-m);
+  }
 }
 
 header {
@@ -31,24 +31,24 @@ header {
   align-items: center;
   flex-wrap: nowrap;
 
-  h1 {
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  & h1 {
     margin: 0;
   }
 }
 
 nav {
-  ul {
+  & ul {
     list-style: none;
   }
 
-  li {
+  & li {
     display: inline-block;
-    padding-left: 1rem;
+    padding-left: var(--spacing-m);
   }
-}
-
-footer {
-  font-size: 0.65rem;
 }
 
 hr {
@@ -56,16 +56,16 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid var(--bodyFontColor);
-  margin: 2rem 0;
+  margin: var(--spacing-xl) 0;
   padding: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  margin: 0 0 2rem;
+  margin: 0 0 var(--spacing-xl);
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 var(--spacing-m);
 }
 
 a,

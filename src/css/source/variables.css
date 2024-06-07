@@ -4,12 +4,13 @@
   --bodyFontSize: 16px;
   --bodyFontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --bodyFontWeight: 400;
-  --bp-small: 768px;
-  --bp-medium: 1024px;
-  --bp-large: 1280px;
-  --gapSize: 16px;
   --line-height: 1.5;
   --linkFontColor: #00f;
   --linkFontColorHover: #f0f;
   --siteWidth: 800px;
+  --spacing-xs: 0.25rem;
+  --spacing-s: 0.5rem;
+  --spacing-m: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
 }

@@ -16,11 +16,11 @@ pop-up {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  &.pop-up--opened {
-    visibility: visible;
-    opacity: 1;
-  }
+pop-up.pop-up--opened {
+  visibility: visible;
+  opacity: 1;
 }
 
 .pop-up__content {
@@ -31,7 +31,7 @@ pop-up {
   padding: var(--popup-padding);
   position: relative;
 
-  @media @small {
+  @media only screen and (max-width: 768px) {
     max-width: calc(100% - calc(var(--popup-padding)*2));
   }
 }
