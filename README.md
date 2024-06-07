@@ -1,4 +1,4 @@
-# 🚀 blast-off v2.5
+# 🚀 blast-off v2.5.2
 
 Blast-off is a simple, lightweight, and framework to help you get started with your next project.
 
