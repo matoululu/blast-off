@@ -1,6 +1,6 @@
 {
   "name": "blast-off",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "description": "A basic template and project for static sites",
   "source": "src/index.html",
   "parcel-namer-rewrite": {
