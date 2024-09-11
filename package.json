@@ -28,6 +28,8 @@
   },
   "homepage": "https://github.com/matoululu/blast-off#readme",
   "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.5.4",
     "buffer": "^5.7.1",
     "parcel": "latest",
     "parcel-namer-rewrite": "^2.0.0-rc.3"
